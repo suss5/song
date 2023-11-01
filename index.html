@@ -8,12 +8,43 @@
   const c = document.getElementById('canvas');
   const ct1 = c.getContext('2d');
   var audio = new Audio('lessend.mp3');
-   var n=1
+  var n=1
+  var l=[
+"Ohh, Darling",
+"What have you done",
+"With your kindness",
+"excitement and fun",
+"I'm addicted",
+"became obsessed",
+"I must ask",
+"make me love you less"
+    ]
+/*
+Where are those
+ dark lonely days
+Where has
+ my old self gone
+How to be selfish
+ now we are two of a kind
+How to focus
+ when you're always on my mind
+
+Ohh darling,
+ I have one request
+Lovely sweetheart
+ make me love you less
+
+Do what you need to
+Lie, break my heart
+So I can take you for granted
+Like I did at the start
+*/
+    
 function pl(){
   audio.play();
 }
 function wr(){
-    ct1.fillText("Line "+n+" of song",10,20*n)
+    ct1.fillText(l[n],10,20*n)
   n++
 }
   setTimeout(pl,3000)
