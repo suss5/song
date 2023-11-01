@@ -1,13 +1,21 @@
 <html>
   <body>
-    <p>song1</p>
-    <script>
-
-var audio = new Audio('lessend.mp3');
+    <p>song2</p>
+     <canvas id="canvas"></canvas>
+  <script>
+  const c = document.getElementById('canvas');
+  const ct1 = c.getContext('2d');
+  var audio = new Audio('lessend.mp3');
+    
 function pl(){
   audio.play();
 }
-    setTimeout(pl, 4000)
+function wr(){
+    ct1.fillText("Line 1 of song",10,100)
+    setTimeout(pl, 3000)
+}
+  setTimeout(pl,3000)
+  setTimeout(wr,5000)
     </script>
   </body>
 </html>
