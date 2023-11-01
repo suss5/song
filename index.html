@@ -1,7 +1,8 @@
 <html>
   <body>
     <p>song4</p>
-    <button onclick="wr()">Click</button>
+    <button onclick="pl()">Song</button>
+    <button onclick="wr()">Lyrics</button>
      <canvas id="canvas"></canvas>
   <script>
   const c = document.getElementById('canvas');
@@ -12,7 +13,7 @@ function pl(){
   audio.play();
 }
 function wr(){
-    ct1.fillText("Line n of song",10,50*n)
+    ct1.fillText("Line "+n+" of song",10,20*n)
   n++
 }
   setTimeout(pl,3000)
