@@ -1,17 +1,19 @@
 <html>
   <body>
-    <p>song3</p>
+    <p>song4</p>
+    <button onclick="wr()">Click</button>
      <canvas id="canvas"></canvas>
   <script>
   const c = document.getElementById('canvas');
   const ct1 = c.getContext('2d');
   var audio = new Audio('lessend.mp3');
-    
+   var n=1
 function pl(){
   audio.play();
 }
 function wr(){
-    ct1.fillText("Line 1 of song",10,100)
+    ct1.fillText("Line n of song",10,50*n)
+  n++
 }
   setTimeout(pl,3000)
   setTimeout(wr,5000)
